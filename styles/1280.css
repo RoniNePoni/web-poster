@@ -1,0 +1,881 @@
+/* десктоп 1280 */
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+html {overflow-x: hidden;}
+
+body {
+  background-color: black;
+  width: 1280px;
+  height: 3509px;
+}
+
+.container {
+  max-width: 1280px;
+  overflow: hidden;
+  position: relative;
+    height: 3509px;
+}
+
+.first {
+  position: relative;
+  width: 1280px;
+  height: 1122px;
+}
+
+.stairs {
+  position: relative;
+  margin-top: 0;
+  width: 1440px;
+  height: 1565px;
+  background-size: cover;
+  background-image: url("../images/stairs.svg");
+}
+
+.catjump {
+  z-index: 100;
+  position: absolute;
+  width: 450px;
+  height: 410px;
+  margin: 200px 0 0 140px;
+  background-image: url("../images/catjump.svg");
+  animation: cat forwards .5s steps(400) running;
+  transition: all .1s;
+}
+
+@keyframes cat {
+
+  0% {margin-top: -500px;}
+
+  100% {margin-top: -34px;}
+
+}
+
+.catjump:hover {
+  background: url('../images/catjump2.svg');
+  width: 430px;
+  height: 410px;
+  transform: translateY(-40px);
+  transition: all .1s;
+}
+
+
+
+.bottle {
+  position: absolute;
+  width: 85px;
+  height: 145px;
+  margin-top: -1464px;
+  margin-left: 565px;
+  background-image: url('../images/bottle.svg');
+  animation-name: bottle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+.bottle1 {
+  position: absolute;
+  width: 47px;
+  height: 135px;
+  margin-top: -1454px;
+  margin-left: 515px;
+  background-image: url('../images/bottle1.svg');
+  animation-name: bottle1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+.bottle2 {
+  position: absolute;
+  width: 47px;
+  height: 129px;
+  margin-top: -1176px;
+  margin-left: 91px;
+  background-image: url('../images/bottle2.svg');
+  animation-name: bottle2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+@keyframes bottle1{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+@keyframes bottle2{
+  0% {
+      transform: rotateZ(20deg) ;
+  }
+  50% {
+      transform: rotateZ(-20deg);
+  }
+  100% {
+      transform: rotateZ(20deg);
+  }
+}
+
+.lamp {
+  position: absolute;
+  z-index: 2;
+  width: 127.6px;
+  height: 728.29px;
+  margin-left: 552px;
+  margin-top: -1314px;
+  animation-name: lampa;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: top;
+}
+
+
+@keyframes lampa{
+  0% {
+      transform: rotateZ(8deg) translateX(-12px);
+  }
+  50% {
+      transform: rotateZ(-8deg) translateX(12px);
+}
+  100% {
+      transform: rotateZ(8deg) translateX(-12px);
+  }
+}
+
+.lapki {
+position: absolute;
+width: 450px;
+height: 767px;
+background-size: cover;
+margin-left: 779px;
+margin-top: -1780px;
+background-image: url('../images/lapki.svg');
+animation: lapki infinite 2s steps(1);
+}
+
+@keyframes lapki {
+
+  0% {background-position: 0 top;}
+
+  50% {background-position: -470px top;
+  transform: translateX(87px);}
+
+  100% {background-position: -940px top;}
+
+}
+
+.tusovka {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  width: 1250px;
+  height: 184px;
+  background-size: cover;
+  margin-top: -1026px;
+  margin-left: 15px;
+  background-image: url('../images/tusovka.png');
+}
+
+.lapa {
+  position: absolute;
+  width: 905px;
+  height: 232px;
+  margin-top: -747px;
+  margin-left: -532px;
+  background-image: url("../images/lapa.svg");
+  animation: lapa infinite 6s running;
+
+}
+
+@keyframes lapa{
+  0% {
+      transform: translateX(-260px);
+  }
+  50% {
+      transform: translateX(260px);
+  }
+  100% {
+      transform: translateX(-260px);
+  }
+}
+
+.catlye {
+  z-index: 2;
+  position: absolute;
+  width: 526px;
+  height: 418px;
+  background-size: cover;
+  margin-top: -929px;
+  margin-left: 801px;
+  background-image: url("../images/catlye.svg");
+  animation: catlye 1s alternate steps(1) infinite;
+  transition: all .05s;
+}
+
+@keyframes catlye{
+  0% {background-position: 0 0;}
+
+
+  14% {background-position: -536px 0;
+  transform: translateY(5px);}
+
+  28% {background-position: -1072px 0;
+  transform: translateY(9px);}
+
+  42% {background-position: -1608px 0;
+    transform: translateY(10px);}
+
+  56% {background-position: -2144px 0;
+    transform: translateY(15px);}
+
+  70% {background-position: -2680px 0;
+    transform: translateY(20px);}
+
+  /* 84% {background-position: -3218px 0;
+    transform: translateY(28px);} */
+
+}
+
+
+.bottle3 {
+  z-index: 1;
+  position: absolute;
+  width: 160px;
+  height: 210px;
+  background-size: cover;
+  margin-top: -738px;
+  margin-left: 1142px;
+  background-image: url('../images/bottle3.svg');
+}
+
+
+.text {
+
+  position: absolute;
+  width: 705px;
+  height: 64px;
+  left: 121px;
+  top: 1051px;
+  font-family: 'HelveticaNeue';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  color: #B7B7B7;
+  transform: rotate(-4.04deg);
+}
+
+.second {
+  position: relative;
+  width: 1440px;
+  height: 1122px;
+}
+
+.padik {
+  z-index: 1;
+  position: absolute;
+  width: 1245px;
+  height: 139px;
+  background-size: cover;
+  margin-top: 0;
+  margin-left: 20px;
+  background-image: url("../images/padik.png");
+}
+
+.bottle4 {
+  z-index: 2;
+  position: absolute;
+  width: 79px;
+  height: 137px;
+  margin-top: 20px;
+  margin-left: 555px;
+  background-image: url('../images/bottle4.svg');
+  animation-name: bottle4;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle4{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+
+.bottle5 {
+  z-index: 2;
+  position: absolute;
+  width: 89px;
+  height: 146px;
+  margin-top: 150px;
+  margin-left: 292px;
+  background-image: url('../images/bottle5.svg');
+  animation-name: bottle5;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle5{
+  0% {
+      transform: rotateZ(20deg) ;
+  }
+  50% {
+      transform: rotateZ(-20deg);
+  }
+  100% {
+      transform: rotateZ(20deg);
+  }
+}
+
+.bottle6 {
+  z-index: 2;
+  position: absolute;
+  width: 40px;
+  height: 90px;
+  margin-top: 210px;
+  margin-left: 249px;
+  background-image: url('../images/bottle6.svg');
+  animation-name: bottle6;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle6{
+  0% {
+      transform: rotateZ(20deg) ;
+  }
+  50% {
+      transform: rotateZ(-20deg);
+  }
+  100% {
+      transform: rotateZ(20deg);
+  }
+}
+
+.disco {
+  z-index: 1;
+  position: absolute;
+  width: 288px;
+  height: 573px;
+  margin-top: -88px;
+  margin-left: 923px;
+  background-image: url('../images/disco.svg');
+  animation-name: disco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: bottom;
+  animation-timing-function: steps(1);
+}
+
+@keyframes disco {
+
+  0% {background-position: 0 top;
+
+}
+
+  50% {background-position: -417px top;
+}
+
+}
+
+
+
+.stairs2 {
+  z-index: 1;
+  position: absolute;
+  width: 1440px;
+  height: 1045px;
+  margin-top: 435px;
+  margin-left: 0px;
+  background-image: url('../images/stairs2.svg');
+}
+
+.catlye2 {
+  z-index: 2;
+  position: absolute;
+  width: 433px;
+  height: 240px;
+  background-size: cover;
+  margin-top: 327px;
+  margin-left: 220px;
+  background-image: url('../images/catlye2.svg');
+  animation-name: catlye2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: bottom;
+  animation-timing-function: steps(1);
+}
+
+@keyframes catlye2 {
+
+  0% {background-position: 0 top;
+
+}
+
+  50% {background-position: -550px top;
+    transform: translateX(-23px);
+}
+
+  100% {background-position: -1026px top;
+}
+
+}
+
+.lampa2 {
+  z-index: 3;
+  position: absolute;
+  width: 145px;
+  height: 680px;
+  margin-top: 439px;
+  margin-left: 72px;
+  background-image: url('../images/lampa2.svg');
+  animation-name: lampa2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: steps(1000);
+}
+
+@keyframes lampa2 {
+
+  0% {
+  transform: scale(1.0);
+}
+
+  50% {
+  transform: scale(1.3) translateY(78px);
+
+}
+
+  100% {
+  transform: scale(1.0);
+}
+
+}
+
+.bottle7 {
+  z-index: 2;
+  position: absolute;
+  width: 50px;
+  height: 137px;
+  margin-top: 482px;
+  margin-left: 704px;
+  background-image: url('../images/bottle7.svg');
+  animation-name: bottle7;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle7{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+
+
+.emo {
+  z-index: 2;
+  position: absolute;
+  width: 1253px;
+  height: 200px;
+  background-size: cover;
+  margin-top: 690px;
+  margin-left: 12px;
+  background-image: url('../images/emo.png');
+}
+
+.text2 {
+  position: absolute;
+  width: 426px;
+  height: 64px;
+  margin-left: 882px;
+  margin-top: 634px;
+  font-family: 'HelveticaNeue';
+  font-size: 28px;
+  line-height: 28px;
+  color: #B7B7B7;
+  transform: rotate(2.87deg);
+}
+
+.third {
+  position: relative;
+  width: 1440px;
+  height: 1122px;
+}
+
+.stairs3 {
+  position: absolute;
+  margin-top: 358px;
+  margin-left: 0;
+  width: 1443px;
+  height: 905px;
+  background-image: url("../images/stairs3.svg");
+}
+
+.catstand {
+  position: absolute;
+  margin-top: -37px;
+  margin-left: 880px;
+  background-size: cover;
+  width: 390px;
+  height: 360px;
+  background-image: url("../images/catstand.svg");
+  z-index: 10;
+  transition: all .1s;
+  animation: catstand forwards 0.5s steps(400) running;
+
+
+}
+
+.catstand:hover {
+  background-image: url('../images/catstand2.svg');
+  transition: all .1s;
+    transform: translateY(-300px);
+  transform: scale(1.1);
+
+
+}
+
+.bottle8 {
+  position: absolute;
+  margin-top: -117px;
+  margin-left: 614px;
+  width: 104px;
+  height: 209px;
+  background-image: url("../images/bottle8.svg");
+  animation-name: bottle8;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle8{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+
+.bottle9 {
+  position: absolute;
+  margin-top: -31px;
+  margin-left: 560px;
+  width: 57px;
+  height: 120px;
+  background-image: url("../images/bottle9.svg");
+  animation-name: bottle9;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle9{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+
+.bottle10 {
+  position: absolute;
+  margin-top: -75px;
+  margin-left: 499px;
+  width: 61px;
+  height: 169px;
+  background-image: url("../images/bottle10.svg");
+  animation-name: bottle10;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle10{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+
+.text3 {
+position: absolute;
+width: 512px;
+height: 32px;
+margin-left: 89px;
+margin-top: 278px;
+font-family: 'HelveticaNeue';
+font-size: 28px;
+color: #B7B7B7;
+transform: rotate(-2.5deg);
+}
+
+.kotov {
+  z-index: 1;
+  position: absolute;
+  width: 1240px;
+  height: 270px;
+  background-size: cover;
+  margin-top: 318px;
+  margin-left: 20px;
+  background-image: url("../images/kotov.png");
+}
+
+.bottle11 {
+  z-index: 2;
+  position: absolute;
+  margin-top: 580px;
+  margin-left: 890px;
+  width: 114px;
+  height: 158px;
+  background-image: url("../images/bottle11.svg");
+  animation-name: bottle11;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle11{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+
+.bottle12 {
+  z-index: 2;
+  position: absolute;
+  margin-top: 619px;
+  margin-left: 1010px;
+  width: 56px;
+  height: 120px;
+  background-image: url("../images/bottle12.svg");
+  animation-name: bottle12;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle12{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+
+.bottle13 {
+  z-index: 2;
+  position: absolute;
+  margin-top: 730px;
+  margin-left: 1152px;
+  width: 104px;
+  height: 137px;
+  background-image: url("../images/bottle13.svg");
+  animation-name: bottle13;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle13{
+  0% {
+      transform: rotateZ(-20deg) ;
+  }
+  50% {
+      transform: rotateZ(20deg);
+  }
+  100% {
+      transform: rotateZ(-20deg);
+  }
+}
+
+.magnitola {
+  z-index: 2;
+  position: absolute;
+  margin-top: 567px;
+  margin-left: 315px;
+  width: 541px;
+  height: 570px;
+  background-image: url("../images/magnitola.svg");
+  animation-name: magnitola;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: bottom;
+  animation-timing-function: steps(1);
+}
+
+@keyframes magnitola {
+
+  0% {background-position: 0 top;
+  transform: scale(1.0);
+}
+
+  50% {background-position: -544px top;
+  transform: scale(1.1);
+}
+
+  100% {background-position: -1026px top;
+  transform: scale(1.0);
+}
+
+}
+
+
+.bottle14 {
+  z-index: 2;
+  position: absolute;
+  margin-top: 1056px;
+  margin-left: 300px;
+  width: 149px;
+  height: 208px;
+  background-image: url("../images/bottle14.svg");
+  animation-name: bottle14;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle14{
+  0% {
+      transform: rotateZ(20deg) ;
+  }
+  50% {
+      transform: rotateZ(-20deg);
+  }
+  100% {
+      transform: rotateZ(20deg);
+  }
+}
+
+
+.bottle15 {
+  z-index: 2;
+  position: absolute;
+  margin-top: 1111px;
+  margin-left: 238px;
+  width: 60px;
+  height: 151px;
+  background-image: url("../images/bottle15.svg");
+  animation-name: bottle15;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  transform-origin: bottom;
+}
+
+@keyframes bottle15{
+  0% {
+      transform: rotateZ(20deg) ;
+  }
+  50% {
+      transform: rotateZ(-20deg);
+  }
+  100% {
+      transform: rotateZ(20deg);
+  }
+}
+
+.hse {
+  z-index: 2;
+  position: absolute;
+  margin-top: 1149px;
+  margin-left: 989px;
+  width: 280px;
+  height: 111px;
+  background-size: cover;
+  background-image: url("../images/hse.svg");
+}
+
+.text4 {
+position: absolute;
+width: 261px;
+height: 40px;
+margin-left: 456px;
+margin-top: 1209px;
+font-family: 'HelveticaNeue';
+font-style: normal;
+font-size: 28px;
+color: #A5A5A5;
+}
+
+.example {
+  position: absolute;
+  margin-top: 0;
+  z-index: -1;
+  opacity: 50%;
+  width: 100%;
+  height: 3516px;
+  background-image: url('../images/example.png');
+}
+
+}
